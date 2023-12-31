@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill out this survey form below:</p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Enter your name: <input id="name" type="text" placeholder="Owen" required></input></label>
+      </div>
+      <div>
+        <label id="email-label" for="email">Enter your email: <input id="email" type="email" placeholder="owen@gmail.com" required></input></label>
+      </div>
+      <div>
+        <label id="number-label" for="number">Enter number: <input id="number" type="number" pattern="[0-9]" min="1" max="999" placeholder="24"></input></label>
+      </div>
+      <div>
+      <label class="inline" for="dropdown">Do you like dogs?</label>
+        <select class="inline" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Yes</option>
+          <option value="2">Yes</option>
+          </select>
+        </div>
+        <div>
+        <fieldset>
+          <legend>What do you like about dogs? (required)</legend>
+          <label for="everything"><input id="everything" name="button" type="radio" value="1" checked> Everything</input></label>
+          <label for="also-everything"><input id="also-everything" name="button" type="radio" value="2"> Also everything</input></label>
+        </fieldset>
+        </div>
+      <div>
+        <label for="comments">Let us know any additional comments you have about dogs: <textarea id="comments" rows="3" cols="30" placeholder="Dogs are awesome"></textarea></label>
+      </div>
+      <div>
+        <label>I agree to have my response collected (check one): 
+          <input class="inline" type="checkbox" value="Y">Yes</input>
+          <input class="inline" type="checkbox" value="N">No</input>
+      </div>
+      <div>  
+        <input id="submit" type="submit" value="Submit"></input>
+      </div>
+    </form>
+  </body>
+</html>
